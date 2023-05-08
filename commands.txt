@@ -1,0 +1,2 @@
+g++ src/Encoder.cpp src/Heap.cpp src/Huffman.cpp -std=c++20 -Iinclude -o build/encoder
+g++ src/Decoder.cpp src/Huffman.cpp -std=c++20 -Iinclude -o build/decoder

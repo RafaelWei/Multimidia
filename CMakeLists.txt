@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.9.1)
 
 project(Huffman
         VERSION 1.0.0
-        DESCRIPTION "Codigo de Huffman"
+        DESCRIPTION "Huffman codec"
         LANGUAGES CXX)
 
 # Compiler flags
@@ -19,3 +19,6 @@ target_include_directories(Encoder PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 # Create the decoder executable
 add_executable(Decoder src/Decoder.cpp src/Heap.cpp src/Huffman.cpp)
 target_include_directories(Decoder PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+# Create the Mean Square Error executable
+add_executable(MSE src/MSE.cpp)

@@ -17,4 +17,8 @@ No caso deste projeto, o objetivo é codificar os valores dos pixels de uma imag
 
 **O projeto não necessita de dependências externas.**
 
-O projeto pode ser compilado usando cmake. Para isso, navegue até a pasta build e rode **cmake ..**. Esse comando vai gerar os arquivos necessários para o build system padrão de acordo com o sistema operacional. Em um MAC ou máquina Linux, por exemplo, será gerado um makefile. O build system específico pode ser fornecido como parâmetro na chamada do cmake. Caso isso seja desejado, pode-se consultar a [documentação de referência do cmake](https://cmake.org/cmake/help/latest/).
+O projeto pode ser compilado usando cmake. Para isso, navegue até a pasta build e rode **cmake ..** . Esse comando vai gerar os arquivos necessários para o build system padrão de acordo com o sistema operacional. Em um MAC ou máquina Linux, por exemplo, será gerado um makefile. O build system específico pode ser fornecido como parâmetro na chamada do cmake. Caso isso seja desejado, pode-se consultar a [documentação de referência do cmake](https://cmake.org/cmake/help/latest/).
+
+## USAGE
+
+Depois da compilação, serão gerados três executáveis: Encoder, Decoder e MSE. Eles devem ser executados nessa ordem, pois os executáveis cada um depende dos arquivos gerados pelos anteriores.

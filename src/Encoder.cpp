@@ -113,7 +113,7 @@ void encode(const std::string file_names[])
     }
 
     average = average / num_elems;
-    std::cout << "Average: " << average << std::endl;
+    std::cout << "Average symbol length when compressing " << file_names[0].substr(7) << ": " << average << std::endl;
 
     /*
      * We need to save the codes to a file in order to 

@@ -140,7 +140,7 @@ void encode(const std::string file_names[])
         for (int col = 0; col < HEIGHT; col++)
         {
             curr_code = codes[img[row][col]];
-            for (int i=0; i<curr_code.size(); i++)
+            for (int i=0; i<static_cast<int>(curr_code.size()); i++)
             {
                 if (curr_code[i] == '1') write_bit(1, buffer, curr_idx, output_file);
                 else                write_bit(0, buffer, curr_idx, output_file);
